@@ -24,8 +24,6 @@ public class VirtualPetTest {
     public void shouldReturnBoredomLevelWhenActivityDone() {
         VirtualPet underTest = new VirtualPet("Buddy", 4, 7, 6);
         underTest.doActivity("b");
-        assertEquals(4,underTest.getBoredomLevel());
+        assertEquals(5, underTest.getBoredomLevel());
     }
-
-
 }

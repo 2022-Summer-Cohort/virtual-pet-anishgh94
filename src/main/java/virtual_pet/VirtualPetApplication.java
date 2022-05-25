@@ -41,7 +41,7 @@ public class VirtualPetApplication {
 
             } else if (optionToDo.equals("a")) {
                 System.out.println("Pick an activity to do with " + buddy.getName() + ": ");
-                System.out.print("Play Ball: B/b || Watch Videos: V/v || Walks: W/w");
+                System.out.print("Play Ball: B/b || Watch Videos: V/v || Walks: W/w ");
                 String activityChoice = sc.nextLine();
                 activityChoice = activityChoice.toLowerCase();
                 buddy.doActivity(activityChoice);
@@ -50,7 +50,7 @@ public class VirtualPetApplication {
             System.out.println("------------------------------------------------------------------------");
             buddy.tick();
         }
-        System.out.println("Goodbye!");
+        System.out.println("Thank you for playing. Goodbye!!");
     }
 
 }

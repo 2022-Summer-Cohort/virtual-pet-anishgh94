@@ -55,13 +55,13 @@ public class VirtualPet {
 
     public void doActivity(String str) {
         switch (str) {
-            case "a":
+            case "b":
                 boredomLevel--;
                 break;
-            case "b":
+            case "v":
                 boredomLevel -= 2;
                 break;
-            case "c":
+            case "w":
                 boredomLevel -= 3;
                 break;
         }
