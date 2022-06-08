@@ -14,6 +14,7 @@ public class VirtualPet {
         this.boredomLevel = boredomLevel;
     }
 
+
     public String getName() {
         return name;
     }
@@ -30,20 +31,23 @@ public class VirtualPet {
         return boredomLevel;
     }
 
-    public void feedPet(int n) {
-        hungerLevel -= n;
+    public void feedPet() {
+        hungerLevel--;
     }
 
-    public void drinkWater(int n) {
-        thirstLevel -= n;
+    public void drinkWater() {
+        thirstLevel--;
+    }
+
+    public void doActivity() {
+        boredomLevel--;
     }
 
     public void showStatus() {
-        System.out.print("Stats of " + name);
-        System.out.print("!! Hunger Level: " + hungerLevel);
-        System.out.print(" || Thirst Level: " + thirstLevel);
-        System.out.println(" || Boredom Level: " + boredomLevel);
-        System.out.println();
+        System.out.print(getName());
+        System.out.print(" >> Hunger Level: " + getHungerLevel());
+        System.out.print(" || Thirst Level: " + getThirstLevel());
+        System.out.println(" || Boredom Level: " + getBoredomLevel());
     }
 
     public void displayOptions() {
@@ -53,19 +57,6 @@ public class VirtualPet {
         System.out.println("If you don't want to do anything, press ENTER: ");
     }
 
-    public void doActivity(String str) {
-        switch (str) {
-            case "b":
-                boredomLevel--;
-                break;
-            case "v":
-                boredomLevel -= 2;
-                break;
-            case "w":
-                boredomLevel -= 3;
-                break;
-        }
-    }
 
     public void tick() {
         hungerLevel++;
