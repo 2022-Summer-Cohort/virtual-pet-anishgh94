@@ -1,5 +1,6 @@
 package virtual_pet;
 
+//IGNORE: to update comment
 public class VirtualPet {
 
     private final String name;

@@ -3,6 +3,7 @@ package virtual_pet;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//IGNORE: to update comment
 public class VirtualPetShelterApplication {
 
     public static String askForOption(Scanner sc) {

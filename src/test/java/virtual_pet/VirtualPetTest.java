@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+//IGNORE: to update comment
 public class VirtualPetTest {
 
     @Test

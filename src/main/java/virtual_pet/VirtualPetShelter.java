@@ -2,6 +2,7 @@ package virtual_pet;
 
 import java.util.ArrayList;
 
+//IGNORE: to update comment
 public class VirtualPetShelter {
 
     private ArrayList<VirtualPet> petShelter;
