@@ -10,6 +10,12 @@ public class VirtualPetAmokShelter {
     }
 
     public VirtualPet getOnePetWithIndex(int n) {
+//        VirtualPet temp = null;
+//
+//        if (amokPetShelter.get(n) instanceof RoboticDog) {
+//            temp = new RoboticDog("asdf",4,4,4,4);
+//        }
+
         return amokPetShelter.get(n);
     }
 
@@ -64,7 +70,6 @@ public class VirtualPetAmokShelter {
     public void feedAllOrganicPets() {
         for (VirtualPet temp : amokPetShelter) {
             if (temp instanceof Organic) {
-                ((Organic) temp).feedOnePet();
                 ((Organic) temp).feedOnePet();
             }
         }
